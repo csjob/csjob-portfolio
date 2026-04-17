@@ -162,7 +162,7 @@ export function SystemBootScreen({
                 </div>
 
                 <video
-                  src="/videos/cool-boy_1.mp4"
+                  src="/videos/cool-boy_scan.webm"
                   autoPlay
                   loop
                   muted
