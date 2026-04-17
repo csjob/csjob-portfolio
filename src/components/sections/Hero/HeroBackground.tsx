@@ -13,8 +13,8 @@ export function HeroBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <Scene />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0F]/40 via-transparent to-[#0A0A0F]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#0A0A0F_70%)]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0F]/20 via-transparent to-[#0A0A0F]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#0A0A0F_60%)] opacity-70" />
     </div>
   );
 }
