@@ -52,6 +52,14 @@ export function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-500 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium hover:bg-blue-500 hover:text-white transition-all duration-300 shadow-lg shadow-blue-500/10"
+          >
+            Download Resume
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -105,6 +113,15 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-5 py-3 rounded-xl bg-blue-500 text-white text-sm font-semibold transition-all duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Download Resume
+              </a>
             </div>
           </motion.div>
         )}

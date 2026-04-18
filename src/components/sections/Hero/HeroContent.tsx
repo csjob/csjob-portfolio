@@ -316,31 +316,7 @@ export function HeroContent() {
           </motion.p>
         </CursorParallax>
 
-        <motion.div
-          className="stage1-rest flex flex-wrap gap-4 mt-12 justify-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1 }}
-        >
-          <CursorParallax strength={6}>
-            <MagneticButton
-              as="a"
-              href="#about"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40"
-            >
-              View System Modules
-            </MagneticButton>
-          </CursorParallax>
-          <CursorParallax strength={6}>
-            <MagneticButton
-              as="a"
-              href="/resume.pdf"
-              className="glass-card border border-white/10 text-white px-8 py-3.5 rounded-xl font-semibold hover:border-blue-500/50"
-            >
-              Download Resume
-            </MagneticButton>
-          </CursorParallax>
-        </motion.div>
+
 
         <motion.div
           className="stage1-rest absolute bottom-12 left-1/2 -translate-x-1/2"

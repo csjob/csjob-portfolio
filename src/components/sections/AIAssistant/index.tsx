@@ -166,7 +166,7 @@ export function AIAssistant() {
     <section
       id="ai"
       data-story-section
-      className="relative py-24 md:py-32 px-6 overflow-hidden"
+      className="relative py-16 md:py-32 px-4 md:px-6 overflow-hidden"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.08)_0%,transparent_62%)]" />
 
@@ -176,13 +176,13 @@ export function AIAssistant() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-14"
+          className="text-center mb-10 md:mb-14"
         >
           <span className="text-blue-400 font-mono text-sm tracking-widest uppercase">
             AI LAYER
           </span>
           <h2
-            className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="mt-4 text-3xl md:text-5xl lg:text-6xl font-bold"
             style={{ fontFamily: "var(--font-sora)" }}
           >
             Activating AI Assistant
@@ -194,54 +194,54 @@ export function AIAssistant() {
           <div className="lg:col-span-2">
             <div
               data-ai-panel
-              className="glass-card rounded-2xl p-6 border border-white/10"
+              className="glass-card rounded-2xl p-5 md:p-6 border border-white/10"
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_18px_rgba(59,130,246,0.7)]" />
-                  <div className="text-sm font-mono text-zinc-300 tracking-widest">
+                  <span className="w-2.5 h-2.5 rounded-full bg-blue-400 shadow-[0_0_18px_rgba(59,130,246,0.7)]" />
+                  <div className="text-xs md:text-sm font-mono text-zinc-300 tracking-widest">
                     MODULES ONLINE
                   </div>
                 </div>
-                <div className="text-xs text-zinc-500 font-mono">
+                <div className="text-[10px] md:text-xs text-zinc-500 font-mono">
                   v1.0.0
                 </div>
               </div>
 
-              <div className="mt-6 space-y-3">
+              <div className="mt-5 md:mt-6 space-y-2.5 md:space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-zinc-500 font-mono">SECURITY</span>
-                  <span className="text-xs text-blue-300 font-mono">
+                  <span className="text-[10px] md:text-xs text-zinc-500 font-mono">SECURITY</span>
+                  <span className="text-[10px] md:text-xs text-blue-300 font-mono">
                     ENCRYPTED
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-zinc-500 font-mono">SCALING</span>
-                  <span className="text-xs text-purple-300 font-mono">
+                  <span className="text-[10px] md:text-xs text-zinc-500 font-mono">SCALING</span>
+                  <span className="text-[10px] md:text-xs text-purple-300 font-mono">
                     ADAPTIVE
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-zinc-500 font-mono">LLM LAYER</span>
-                  <span className="text-xs text-cyan-300 font-mono">
+                  <span className="text-[10px] md:text-xs text-zinc-500 font-mono">LLM LAYER</span>
+                  <span className="text-[10px] md:text-xs text-cyan-300 font-mono">
                     READY
                   </span>
                 </div>
               </div>
 
-              <div className="mt-7">
-                <div className="text-xs font-mono text-zinc-500 tracking-widest uppercase">
+              <div className="mt-6 md:mt-7">
+                <div className="text-[10px] md:text-xs font-mono text-zinc-500 tracking-widest uppercase">
                   Quick actions
                 </div>
-                <div className="mt-3 flex flex-col gap-3">
+                <div className="mt-3 flex flex-row overflow-x-auto pb-1 lg:pb-0 lg:flex-col gap-2 md:gap-3 scrollbar-hide -mx-1 px-1 lg:mx-0 lg:px-0">
                   {quickActions.map((a) => (
                     <MagneticButton
                       key={a.label}
                       as="button"
                       onClick={() => send(a.prompt)}
-                      className="bg-white/[0.03] border border-white/10 text-white px-5 py-3 rounded-xl justify-start"
+                      className="bg-white/[0.03] border border-white/10 text-white px-4 md:px-5 py-2.5 md:py-3 rounded-xl justify-center lg:justify-start whitespace-nowrap lg:whitespace-normal"
                     >
-                      <span className="font-mono text-sm">{a.label}</span>
+                      <span className="font-mono text-xs md:text-sm">{a.label}</span>
                     </MagneticButton>
                   ))}
                 </div>
@@ -272,7 +272,7 @@ export function AIAssistant() {
                 </div>
               </div>
 
-              <div className="h-[360px] md:h-[420px] overflow-auto pr-2 scrollbar-hide">
+              <div className="h-[280px] md:h-[420px] overflow-auto pr-2 scrollbar-hide">
                 <div className="space-y-3">
                   {messages.map((m) => (
                     <motion.div
