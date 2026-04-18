@@ -5,22 +5,22 @@ import { motion, useInView } from "framer-motion";
 
 const posts = [
   {
-    title: ".NET Performance: 10 Optimizations That Matter",
+    title: ".NET Development Unleashed",
     excerpt:
-      "Practical tips for squeezing every bit of performance from your ASP.NET Core applications. From connection pooling to response compression.",
+      "A deep dive into .NET development, covering my experiences, best practices, and tips for building scalable applications with .NET technologies.",
     tag: ".NET",
   },
   {
-    title: "Cybersecurity Basics for Developers",
+    title: "A Journey To Python Django",
     excerpt:
-      "Why every developer should think about security from day one. OWASP top 10, input validation, and defense in depth.",
-    tag: "Security",
+      "My experience learning Python Django and building web applications with it. Tips, tricks, and common pitfalls to avoid.",
+    tag: "Python",
   },
   {
-    title: "My AI Learning Journey: From Zero to LLM",
+    title: "GIT — BIT BY BIT",
     excerpt:
-      "Exploring GenAI, prompt engineering, and how LLMs can augment developer workflows. Experiments, learnings, and open questions.",
-    tag: "AI",
+      "Exploring GIT, GitHub, and how they can supercharge your development workflow. Branching strategies, pull requests, and collaboration tips.",
+    tag: "GIT",
   },
 ];
 

@@ -5,9 +5,9 @@ import { motion, useInView } from "framer-motion";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const links = [
-  { href: "mailto:csjob@example.com", label: "Email", icon: "✉️" },
+  { href: "mailto:csjob.developer@gmail.com", label: "Email", icon: "✉️" },
   { href: "https://github.com/csjob", label: "GitHub", icon: "⌘" },
-  { href: "https://linkedin.com/in/csjob", label: "LinkedIn", icon: "in" },
+  { href: "https://www.linkedin.com/in/cs-job/", label: "LinkedIn", icon: "in" },
 ];
 
 export function Contact() {
